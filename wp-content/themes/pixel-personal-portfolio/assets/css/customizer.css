@@ -1,0 +1,47 @@
+/* ---------Customizer--------- */
+.control-section-pixel_personal_portfolio_upsell_premium_section h3.accordion-section-title,
+.control-section-pixel_personal_portfolio_upsell_live_preview_section h3.accordion-section-title {
+  font-size: 16px !important;
+  color: #fff !important;
+  background: linear-gradient(81deg, #E8411D 0%, #FAAC52 100%) !important; /* Gradient background */
+  padding: 8px 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-in-out !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.control-section-pixel_personal_portfolio_upsell_premium_section h3.accordion-section-title:hover,
+.control-section-pixel_personal_portfolio_upsell_live_preview_section h3.accordion-section-title:hover {
+  background: #E8411D !important;
+}
+a.button.button-secondary.alignright {
+  color: #E8411D;
+  font-weight: bold;
+  background: #fff;
+  font-size: 14px !important;
+  border: 2px solid #fff !important;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.1s ease-in-out !important;
+}
+a.button.button-secondary.alignright:focus {
+  box-shadow: unset !important;
+}
+.control-section-pixel_personal_portfolio_upsell_premium_section h3.accordion-section-title:hover a.button.button-secondary.alignright,
+.control-section-pixel_personal_portfolio_upsell_live_preview_section h3.accordion-section-title:hover a.button.button-secondary.alignright {
+  background: linear-gradient(81deg, #E8411D 0%, #FAAC52 100%) ;
+  color: #fff;
+}
+a.button.button-secondary.alignright:hover {
+  background: #fff;
+  color: #E8411D;
+}
+#accordion-section-pixel_personal_portfolio_upsell_premium_section.cannot-expand .accordion-section-title:after,
+#accordion-section-pixel_personal_portfolio_upsell_live_preview_section.cannot-expand .accordion-section-title:after {
+  display: none !important;
+}
+#customize-theme-controls .customize-pane-parent {
+  overflow: hidden;
+}

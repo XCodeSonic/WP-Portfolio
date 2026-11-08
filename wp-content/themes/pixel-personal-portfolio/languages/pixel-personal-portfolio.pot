@@ -1,0 +1,1413 @@
+# Copyright (C) 2026 ThemesPixel
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pixel Personal Portfolio 0.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/pixel-personal-portfolio\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-05T16:35:33+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: pixel-personal-portfolio\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/block-patterns.php:11
+msgid "Pixel Personal Portfolio"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+#: functions.php:32
+msgid "https://www.themepixels.net/products/pixel-personal-portfolio/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Pixel Personal Portfolio Theme provides a clean layout for displaying portfolios, project galleries, and professional information. The design includes sections for featured work, project descriptions, testimonials, blogs, and contact details. Responsive layouts help content adjust smoothly across desktop and mobile screens. Built-in customization settings allow modifications to fonts, colors, headers, banners, and page sections through the dashboard. The theme also supports social media links, image galleries, and multiple page templates for flexible site organization. The layout structure is suitable for presenting creative and technical work in an organized format. Photographers can display image collections, while Graphic Designers and Illustrators can arrange visual projects with detailed descriptions. Web Developers may use portfolio sections to present completed websites or applications, and Architects or Interior Designers can showcase project imagery and layouts. The theme also includes blog support, translation-ready files, portfolio filtering, and compatibility with commonly used plugins. Its structured navigation and customizable content areas help maintain a clear presentation for project-focused websites without relying on excessive design elements or promotional styling."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "ThemesPixel"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.themepixels.net/"
+msgstr ""
+
+#: functions.php:33
+msgid "https://www.themepixels.net/products/pixel-personal-portfolio-wordpress-theme/"
+msgstr ""
+
+#: functions.php:34
+msgid "https://themepixels.net/demo-site/pixel-personal-portfolio-pro/"
+msgstr ""
+
+#: functions.php:35
+msgid "https://www.themepixels.net/docs/pixel-personal-portfolio-free-doc/"
+msgstr ""
+
+#: functions.php:36
+msgid "https://www.themepixels.net/products/wp-theme-bundle"
+msgstr ""
+
+#: functions.php:37
+msgid "https://wordpress.org/support/theme/pixel-personal-portfolio"
+msgstr ""
+
+#. translators: 1: Theme name
+#: functions.php:115
+msgid "Hello! Thank you for choosing our %1$s!"
+msgstr ""
+
+#. translators: 1: Theme name
+#: functions.php:124
+msgid "%1$s has been successfully installed and is ready for use. The links below will help you get started."
+msgstr ""
+
+#: functions.php:130
+msgid "Pixel Personal Portfolio Theme Information"
+msgstr ""
+
+#: functions.php:132
+msgid "Buy Now"
+msgstr ""
+
+#: functions.php:133
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:239
+msgid "Get All Themes"
+msgstr ""
+
+#: functions.php:134
+msgid "Live Demo"
+msgstr ""
+
+#: functions.php:139
+msgid "Theme Screenshot"
+msgstr ""
+
+#: inc/block-patterns.php:12
+msgid "Pages"
+msgstr ""
+
+#: inc/block-styles.php:17
+msgid "No Padding"
+msgstr ""
+
+#: inc/block-styles.php:26
+#: inc/block-styles.php:44
+#: inc/block-styles.php:53
+#: inc/block-styles.php:63
+#: inc/block-styles.php:73
+#: inc/block-styles.php:82
+msgid "Theme Style"
+msgstr ""
+
+#: inc/block-styles.php:35
+msgid "Plain"
+msgstr ""
+
+#: inc/customizer.php:22
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:219
+msgid "Buy Pixel Personal Portfolio Pro"
+msgstr ""
+
+#: inc/customizer.php:23
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:221
+msgid "Buy Pro Theme"
+msgstr ""
+
+#: inc/customizer.php:29
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:231
+msgid "Preview Pro Theme"
+msgstr ""
+
+#: inc/customizer.php:30
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:233
+msgid "View Live Demo"
+msgstr ""
+
+#: inc/icon-function.php:26
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: inc/icon-function.php:31
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:340
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:341
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:343
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:345
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:346
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/TGM/class-tgm-plugin-activation.php:348
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/TGM/class-tgm-plugin-activation.php:354
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/TGM/class-tgm-plugin-activation.php:360
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/TGM/class-tgm-plugin-activation.php:366
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/TGM/class-tgm-plugin-activation.php:372
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/TGM/class-tgm-plugin-activation.php:378
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:398
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:399
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:400
+#: inc/TGM/class-tgm-plugin-activation.php:3311
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:401
+#: inc/TGM/class-tgm-plugin-activation.php:3103
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:403
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:405
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/TGM/class-tgm-plugin-activation.php:407
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:408
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:409
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:410
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:616
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:617
+msgid "Update Required"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:735
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:1042
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:1042
+#: inc/TGM/class-tgm-plugin-activation.php:1052
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:1052
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:1243
+#: inc/TGM/class-tgm-plugin-activation.php:3099
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/TGM/class-tgm-plugin-activation.php:2112
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2421
+msgid "Required"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2424
+msgid "Recommended"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2440
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2443
+msgid "External Source"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2446
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2463
+msgid "Not Installed"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2467
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2469
+msgid "Active"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2475
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2478
+msgid "Requires Update"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2481
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/TGM/class-tgm-plugin-activation.php:2490
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/TGM/class-tgm-plugin-activation.php:2536
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/TGM/class-tgm-plugin-activation.php:2540
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/TGM/class-tgm-plugin-activation.php:2544
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/TGM/class-tgm-plugin-activation.php:2548
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2630
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2638
+msgid "Installed version:"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2646
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2658
+msgid "Available version:"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2681
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2695
+msgid "Plugin"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2696
+msgid "Source"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2697
+msgid "Type"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2701
+msgid "Version"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2702
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/TGM/class-tgm-plugin-activation.php:2751
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/TGM/class-tgm-plugin-activation.php:2756
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/TGM/class-tgm-plugin-activation.php:2762
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2834
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2867
+msgid "Install"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2873
+msgid "Update"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2876
+msgid "Activate"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2907
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2909
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2950
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:2952
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3059
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3085
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3310
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/TGM/class-tgm-plugin-activation.php:3655
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/TGM/class-tgm-plugin-activation.php:3658
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:3660
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3664
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:3666
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3667
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/TGM/class-tgm-plugin-activation.php:3669
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3672
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/TGM/class-tgm-plugin-activation.php:3674
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3675
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/TGM/class-tgm-plugin-activation.php:3677
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3682
+msgid "Show Details"
+msgstr ""
+
+#: inc/TGM/class-tgm-plugin-activation.php:3682
+msgid "Hide Details"
+msgstr ""
+
+#: inc/TGM/tgm.php:10
+msgid "Video Popup Block by WPZOOM"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404 Page"
+msgstr ""
+
+#: patterns/404.php:9
+msgid "404"
+msgstr ""
+
+#: patterns/404.php:13
+msgid "Oops! That page cannot be found"
+msgstr ""
+
+#: patterns/archive-header-with-background.php
+msgctxt "Pattern title"
+msgid "Archive Header With Background"
+msgstr ""
+
+#: patterns/default-header.php
+msgctxt "Pattern title"
+msgid "Default Header"
+msgstr ""
+
+#: patterns/footer-columns.php
+msgctxt "Pattern title"
+msgid "Footer Columns"
+msgstr ""
+
+#: patterns/footer-columns.php:22
+msgid "Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+msgstr ""
+
+#: patterns/footer-columns.php:28
+msgid "Our Link"
+msgstr ""
+
+#: patterns/footer-columns.php:44
+msgid "Contact Us"
+msgstr ""
+
+#: patterns/footer-columns.php:48
+msgid "your location here"
+msgstr ""
+
+#: patterns/footer-columns.php:52
+msgid "+12 3456789123"
+msgstr ""
+
+#: patterns/footer-columns.php:56
+msgid "support@example.com"
+msgstr ""
+
+#: patterns/footer-columns.php:62
+msgid "Social Media"
+msgstr ""
+
+#: patterns/footer-columns.php:84
+msgid "Pixel Personal Portfolio."
+msgstr ""
+
+#: patterns/footer-columns.php:84
+msgid "All Rights Reserved."
+msgstr ""
+
+#: patterns/main-banner.php
+msgctxt "Pattern title"
+msgid "Main Banner"
+msgstr ""
+
+#: patterns/main-banner.php:15
+msgid "Available For Work"
+msgstr ""
+
+#: patterns/main-banner.php:19
+msgid "Design With Imagination, Drive By Purpose"
+msgstr ""
+
+#: patterns/main-banner.php:37
+msgid "Web Developer"
+msgstr ""
+
+#: patterns/main-banner.php:42
+msgid "Hire Me"
+msgstr ""
+
+#: patterns/main-banner.php:47
+msgid "Quisque sollicitudin arcu sapien, nec facilisis urna commodo quis. Donec tristique, ipsum id sollicitudin vulputate,"
+msgstr ""
+
+#: patterns/main-banner.php:56
+msgid "PORTFOLIO"
+msgstr ""
+
+#: patterns/main-header.php
+msgctxt "Pattern title"
+msgid "Main Header"
+msgstr ""
+
+#: patterns/main-header.php:20
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:58
+msgid "Home"
+msgstr ""
+
+#: patterns/main-header.php:22
+#: patterns/sidebar.php:18
+msgid "About"
+msgstr ""
+
+#: patterns/main-header.php:24
+msgid "Services"
+msgstr ""
+
+#: patterns/main-header.php:26
+msgid "Projects"
+msgstr ""
+
+#: patterns/main-header.php:28
+msgid "Blog"
+msgstr ""
+
+#: patterns/main-header.php:30
+msgid "Page 1"
+msgstr ""
+
+#: patterns/main-header.php:32
+msgid "Page 2"
+msgstr ""
+
+#: patterns/main-header.php:35
+msgid "Contact"
+msgstr ""
+
+#: patterns/main-header.php:43
+msgid "Download CV"
+msgstr ""
+
+#: patterns/post-header-with-background.php
+msgctxt "Pattern title"
+msgid "Post Header With Background"
+msgstr ""
+
+#: patterns/search-result.php
+msgctxt "Pattern title"
+msgid "Search Result"
+msgstr ""
+
+#: patterns/search.php
+msgctxt "Pattern title"
+msgid "Search"
+msgstr ""
+
+#: patterns/search.php:42
+msgid "Sorry Nothing Found. Try searching..!!"
+msgstr ""
+
+#: patterns/service-section.php
+msgctxt "Pattern title"
+msgid "Service Section"
+msgstr ""
+
+#: patterns/service-section.php:13
+msgid "What Can I Do"
+msgstr ""
+
+#: patterns/service-section.php:17
+msgid "Services I Provide"
+msgstr ""
+
+#: patterns/service-section.php:21
+msgid "Etiam nec tortor interdum libero venenatis egestas et id diam. Proin vestibulum commodo velit id consequat."
+msgstr ""
+
+#: patterns/service-section.php:42
+msgid "Web Development"
+msgstr ""
+
+#: patterns/service-section.php:46
+#: patterns/service-section.php:70
+#: patterns/service-section.php:96
+#: patterns/service-section.php:120
+msgid "Fusce nec tortor ullamcorper dictum felis ac, finibus leo. Duis facilisis arcu"
+msgstr ""
+
+#: patterns/service-section.php:51
+#: patterns/service-section.php:75
+#: patterns/service-section.php:101
+#: patterns/service-section.php:125
+msgid "Learn More"
+msgstr ""
+
+#: patterns/service-section.php:66
+msgid "App Design"
+msgstr ""
+
+#: patterns/service-section.php:92
+msgid "Digital Marketing"
+msgstr ""
+
+#: patterns/service-section.php:116
+msgid "UI/UX Design"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/sidebar.php:10
+msgid "Search"
+msgstr ""
+
+#: patterns/sidebar.php:22
+msgid "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown prPoppins took a galley of type and scrambled it to make a type specimen book."
+msgstr ""
+
+#: patterns/sidebar.php:26
+msgid "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown prPoppins took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+msgstr ""
+
+#: patterns/sidebar.php:32
+msgid "Archive"
+msgstr ""
+
+#: patterns/sidebar.php:40
+msgid "Categories"
+msgstr ""
+
+#: patterns/sidebar.php:48
+msgid "Recent Posts"
+msgstr ""
+
+#: patterns/sidebar.php:56
+msgid "Tags"
+msgstr ""
+
+#: patterns/sidebar.php:64
+msgid "Social Icons"
+msgstr ""
+
+#: patterns/sidebar.php:82
+msgid "Gallery"
+msgstr ""
+
+#. translators: 1: Theme Name.
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:47
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:48
+msgid "%1$s Info"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:59
+msgid "Free VS Pro"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:60
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:482
+msgid "FAQs"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:61
+msgid "Free Theme Supports"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:62
+msgid "Please Rate Us"
+msgstr ""
+
+#. translators: 1: Theme Name.
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:74
+msgid "%1$s - Version %2$s"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:81
+msgid "Visit Sites :-"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:84
+msgid "View Website"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:88
+msgid "View Demo Site"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:92
+msgid "Contact Support"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:96
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:225
+msgid "Documentation"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:185
+msgid "Pixel Personal Portfolio Pro"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:186
+msgid "Get all of the features that are infinite!!!"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:187
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:220
+msgid "To get limitless features and improvements, buy the Pixel Personal Portfolio Theme Pro edition."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:226
+msgid "Do you need additional information? You may find detailed instructions on how to use the Pixel Personal Portfolio Theme in our extensive documentation."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:227
+msgid "Go to Free Docs"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:232
+msgid "Explore our Pro Themes full potential! To see the stunning designs and high-end functionality, click the Live Demo button."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:237
+msgid "Get the Bundle"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:238
+msgid "Introducing the WP Theme Bundle by Theme Pixel, a comprehensive collection of over 50 professionally designed WordPress themes tailored for various niches and businesses."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:253
+msgid "HOME"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:256
+msgid "Theme screenshot"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:267
+msgid "FREE VS PRO"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:272
+msgid "Features"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:273
+msgid "Free theme"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:274
+msgid "Pro Theme"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:280
+msgid "Responsive Design"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:290
+msgid "Site Logo upload"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:300
+msgid "Footer Copyright text"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:304
+msgid "Remove the copyright text from the Footer."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:316
+msgid "Easy Customization"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:326
+msgid "Lightweight & Fast Loading"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:336
+msgid "Global Color"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:346
+msgid "Regular Bug Fixes"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:356
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:438
+msgid "Premium Support"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:366
+msgid "Theme Sections"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:369
+msgid "2 Sections"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:370
+msgid "15+ Sections"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:376
+msgid "Custom colors"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:380
+msgid "Choose a color for links, buttons, icons and so on."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:392
+msgid "Google fonts"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:396
+msgid "You can choose and use over 600 different fonts, for the logo, the menu and the titles."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:408
+msgid "Compatible with Popular Plugins"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:418
+msgid "Translation & WPML Ready"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:428
+msgid "SEO Optimized"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:448
+msgid "Extensive Customization"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:458
+msgid "Custom Post Types"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:468
+msgid "High-Level Compatibility with Modern Browsers"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:489
+msgid "What is the difference between Free and Pro?"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:495
+msgid "The themes are well-made in both their free and premium versions. But there are a lot more features in the Pro edition."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:498
+msgid "You may quickly alter the appearance and feel of your website with the Pro version. You can alter your websites color and typeface with a few clicks. With more customization choices, the premium version gives you greater control over the theme. In addition, the theme offers more layout options and sections than the free version."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:507
+msgid "What are the advantages of upgrading to the Premium version?"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:513
+msgid "In addition to the additional features and regular upgrades, the Premium version comes with premium support. Compared to the free assistance, you will receive a much faster response if you encounter any theme problems."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:522
+msgid "Upgrading to the Pro version- will I lose my changes?"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:528
+msgid "Your posts, pages, media, categories, and other data will all be preserved when you upgrade to the Pro theme."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:531
+msgid "You will need to configure the extra features via the customizer, though, because the Pro edition has more features and options. It just takes a few minutes to complete this easy process."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:534
+msgid "There is a lot of flexibility in the Pro version to accommodate future updates. As a result, it differs slightly from the free theme yet is incredibly versatile and user-friendly."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:543
+msgid "How do I change the copyright text?"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:549
+msgid "You can change the copyright text going to Appearance > Customize > Footer Option > And here you can find (Edit Footer Copyright Text)"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:558
+msgid "Why is my theme not working well?"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:564
+msgid "It could be a plugin conflict if your customizer is not loading correctly or if you are experiencing problems with the theme."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:567
+msgid "Deactivate every plugin first, with the exception of those the theme suggests, to resolve the problem. After that, use \"Ctrl+Shift+R\" on Windows to force a new page load. Once the problems have been resolved, begin turning on each plugin individually, then refresh and verify your website each time. This will assist you in identifying the problematic plugin."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:570
+msgid "Please get in touch with us if this was not helpful."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:579
+msgid "How can I solve my issues quickly and get faster support?"
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:585
+msgid "Please make sure you have updated the theme to the most recent version before sending us a support ticket for any problems. The theme update may have resolved the issue."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:588
+msgid "Please try to include as much information as you can in your support ticket submission so that we can address your issue more quickly. We advise you to email us one or more screenshots that clearly illustrate the problems and include the URL of your website."
+msgstr ""
+
+#: themeinfo/pixel_personal_portfolio_themeinfo_page.php:591
+msgid "Please be patient with us as we may have a delayed response time during the weekend."
+msgstr ""
+
+#: styles/brown.json
+msgctxt "Style variation name"
+msgid "Brown"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Background"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Third Color"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Heading"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Body Text"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary Text Color"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Tertiary Bg Color"
+msgstr ""
+
+#: styles/brown.json
+#: styles/Gold.json
+#: styles/orange.json
+#: styles/pink.json
+#: styles/Purple.json
+#: styles/Red.json
+#: styles/sky-blue.json
+#: styles/yellow.json
+#: theme.json
+msgctxt "Color name"
+msgid "Foreground"
+msgstr ""
+
+#: styles/Gold.json
+msgctxt "Style variation name"
+msgid "Gold"
+msgstr ""
+
+#: styles/orange.json
+msgctxt "Style variation name"
+msgid "Orange"
+msgstr ""
+
+#: styles/pink.json
+msgctxt "Style variation name"
+msgid "Pink"
+msgstr ""
+
+#: styles/Purple.json
+msgctxt "Style variation name"
+msgid "Purple"
+msgstr ""
+
+#: styles/Red.json
+msgctxt "Style variation name"
+msgid "Red"
+msgstr ""
+
+#: styles/sky-blue.json
+msgctxt "Style variation name"
+msgid "Sky Blue"
+msgstr ""
+
+#: styles/yellow.json
+msgctxt "Style variation name"
+msgid "Yellow"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Poppins"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Tiny"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Upper Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Content Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Site Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Post Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Semi Huge"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Huge (Display)"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Foreground and background"
+msgstr ""
+
+#: theme.json
+msgctxt "Duotone name"
+msgid "Primary and Heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical foreground to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical background to foreground"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal primary to foreground"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal primary to background"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Diagonal primary to heading"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Projects Overlay"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer Columns"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Content"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Page Content"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Post (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Post (No Sidebar)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Post (No Header Image)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Page (Sidebar on Right)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single Page (Sidebar on Left)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page (No Header Image)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blog Page (Right Sidebar)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blog Page (Left Sidebar)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blog Page (No Sidebar)"
+msgstr ""

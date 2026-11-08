@@ -1,0 +1,8 @@
+/* Featured Boxes Customizer CSS */
+#customize-control-graceful_aspire_blog_options-featured_boxes_title_1, 
+#customize-control-graceful_aspire_blog_options-featured_boxes_title_2,
+#customize-control-graceful_aspire_blog_options-featured_boxes_title_3 {
+	border-top: 1px solid #aaaaaa;
+    padding-top: 10px;
+    margin-top: 8px;
+}

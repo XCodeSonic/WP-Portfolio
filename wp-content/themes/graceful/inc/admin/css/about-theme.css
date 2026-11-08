@@ -1,0 +1,381 @@
+/* General */
+.welcome-text {
+	width: 80%;
+	margin-bottom: 10px;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.three-columns-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	max-width: 1280px;
+	background: #ffffff;
+	padding: 25px 30px;
+	box-sizing: border-box;
+}
+
+.three-columns-wrap > br {
+	display: none;
+}
+
+.three-columns-wrap p {
+	font-size: 14px;
+}
+
+.graceful-table-wrap {
+	background: #ffffff;
+	padding: 20px;
+}
+
+.nav-tab-wrapper .nav-tab-active {
+	background: #ffffff;
+}
+
+.column-width-3 {
+	width: calc(33.333% - 20px);
+	box-sizing: border-box;
+}
+
+.column-width-3 .button-primary {
+	height: 36px;
+	line-height: 34px;
+	padding: 0 18px 1px;
+	font-size: 14px;
+}
+
+
+/* Recommended Plugins */
+.three-columns-wrap .plugin-card {
+	position: relative;
+	width: 30% !important;
+	min-height: 170px;
+	padding: 20px;
+	margin-right: 1% !important;
+	margin-left: 0 !important;
+	clear: none !important;
+}
+
+.three-columns-wrap .column-description {
+	margin-top: 20px !important;
+	margin-right: 90px !important;
+}
+
+.three-columns-wrap .column-description p {
+	font-size: 13px !important;
+	margin-bottom: 0 !important;
+}
+
+.three-columns-wrap .action-links {
+	 width: auto !important;
+}
+
+
+/* Free vs Pro */
+.free-vs-pro {
+  width: 50%;
+}
+
+.free-vs-pro th {
+  padding-right: 0;
+  padding-left: 8px;
+  font-size: 1.2em;
+}
+
+.free-vs-pro thead th:first-child {
+  text-align: left;
+  padding-left: 0 !important;
+}
+
+.free-vs-pro thead th {
+  vertical-align: middle;
+}
+
+.free-vs-pro th,
+.compare-icon {
+  text-align: center;
+}
+
+.free-vs-pro td {
+  width: 80%;
+  padding: 20px 0 25px;
+  border-top: 1px solid #ccc;
+}
+
+.free-vs-pro tr:last-child td {
+	text-align: right;
+}
+
+.free-vs-pro h3 {
+  margin: 0 !important;
+}
+
+.free-vs-pro td p {
+  max-width: 450px;
+}
+
+.free-vs-pro .only-pro {
+	color: red;
+}
+
+.compare-icon span:before {
+  font-size: 25px;
+}
+
+.compare-icon .dashicons-yes {
+  color: green;
+}
+
+.compare-icon .dashicons-no {
+  color: red;
+}
+
+
+/* Responsive */
+@media screen and ( max-width: 1600px ) {
+	.three-columns-wrap .plugin-card {
+		width: 49% !important;
+	}
+}
+
+@media screen and ( max-width: 1360px ) {
+	.free-vs-pro {
+		width: 80% !important;
+	}
+}
+
+@media screen and ( max-width: 1160px ) {
+	.three-columns-wrap .plugin-card {
+		width: 100% !important;
+		margin-right: 0 !important;
+	}
+	
+}
+
+@media screen and ( max-width: 1024px ) {
+	.column-width-3 {
+		width: calc(50% - 15px) !important;
+		margin-right: 0 !important;
+	}
+}
+
+@media screen and ( max-width: 790px ) {
+	.column-width-3 {
+		width: 100% !important;
+		margin-right: 0 !important;
+	}
+}
+
+/* Graceful Welcome Admin Notice - Exactly Matching Envo Royal Banner Style */
+.notice.graceful-notice {
+	padding: 0 !important;
+	border-left: 4px solid #72aee6 !important;
+	margin: 20px 20px 15px 0;
+	position: relative;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.graceful-notice .graceful-notice-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col {
+	box-sizing: border-box;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col.graceful-notice-col-left {
+	width: 60%;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col.graceful-notice-col-right {
+	width: 40%;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col .graceful-notice-content {
+	max-width: 680px;
+	padding-left: 64px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col h2 {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 34px;
+	letter-spacing: -0.5px;
+	color: #1f2937;
+	margin-top: 0;
+	margin-bottom: 12px;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col .graceful-notice-description {
+	color: #4b5563;
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.graceful-notice .graceful-notice-actions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+/* Cyan 1-Click Install Button (sf-nux-button) */
+.graceful-notice a.sf-nux-button,
+a.sf-nux-button {
+	background: #00aadc;
+	border-color: #0087be;
+	border-style: solid;
+	border-width: 1px 1px 2px;
+	color: #fff !important;
+	cursor: pointer;
+	display: inline-block;
+	outline: 0;
+	overflow: hidden;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	border-radius: 4px;
+	margin: 0;
+	padding: 7px 16px 9px;
+	text-decoration: none;
+	box-shadow: none;
+	vertical-align: middle;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.graceful-notice a.sf-nux-button:hover,
+.graceful-notice a.sf-nux-button:focus,
+a.sf-nux-button:hover,
+a.sf-nux-button:focus {
+	background: #0093be;
+	border-color: #006f9d;
+	color: #fff !important;
+}
+
+.graceful-notice a.sf-nux-button.disabled,
+a.sf-nux-button.disabled {
+	background: #78dcfa;
+	border-color: #5bcbf0;
+	color: #fff !important;
+	cursor: default;
+	pointer-events: none;
+}
+
+/* Learn more text link */
+.graceful-notice .sf-learn-more {
+	font-size: 14px;
+	color: #2271b1;
+	text-decoration: underline;
+	margin-right: 5px;
+}
+
+.graceful-notice .sf-learn-more:hover {
+	color: #135e96;
+}
+
+/* Royal Blue "Get Started" Button */
+.graceful-notice a.graceful-hero-button {
+	background: #3858e9;
+	border: 1px solid #3858e9;
+	color: #fff !important;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 21px;
+	padding: 8px 18px;
+	border-radius: 6px;
+	text-decoration: none;
+	box-shadow: none;
+	display: inline-block;
+	vertical-align: middle;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.graceful-notice a.graceful-hero-button:hover,
+.graceful-notice a.graceful-hero-button:focus {
+	background: #2544d6;
+	border-color: #2544d6;
+	color: #fff !important;
+}
+
+/* Right column banner image */
+.graceful-notice .graceful-notice-row .graceful-notice-col.graceful-notice-col-right {
+	align-self: flex-end;
+}
+
+.graceful-notice .graceful-notice-row .graceful-notice-col .graceful-notice-image img,
+.graceful-notice .graceful-notice-row .graceful-notice-col .image-container img,
+.image-container img {
+	width: 100%;
+	height: auto;
+	float: right;
+	max-width: 380px;
+	padding: 5px 64px 5px 0;
+	box-sizing: border-box;
+	display: block;
+}
+
+/* 1-Click Install Animation Spinner */
+.sf-install-now.updating-message::before {
+	display: inline-block;
+	content: "\f463";
+	font: 400 18px/1 dashicons;
+	margin: 0 5px 0 -2px;
+	vertical-align: text-bottom;
+	-webkit-animation: rotation 2s linear infinite;
+	animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
+
+@-webkit-keyframes rotation {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+/* Responsive Collapsing */
+@media only screen and (max-width: 960px) {
+	.graceful-notice .graceful-notice-row .graceful-notice-col .graceful-notice-content {
+		padding-left: 30px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.graceful-notice .graceful-notice-row .graceful-notice-col h2 {
+		font-size: 28px;
+		line-height: 32px;
+	}
+	.graceful-notice .graceful-notice-row .graceful-notice-col .graceful-notice-description {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 782px) {
+	.graceful-notice .graceful-notice-row .graceful-notice-col.graceful-notice-col-right {
+		display: none;
+	}
+	.graceful-notice .graceful-notice-row .graceful-notice-col {
+		width: 100% !important;
+	}
+	.graceful-notice .graceful-notice-row .graceful-notice-col .graceful-notice-content {
+		padding: 25px 20px;
+	}
+}

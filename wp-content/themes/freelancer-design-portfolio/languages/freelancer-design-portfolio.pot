@@ -1,0 +1,759 @@
+# Copyright (C) 2026 scintillawpthemes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Freelancer Design Portfolio 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/freelancer-design-portfolio\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-22T12:26:21+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: freelancer-design-portfolio\n"
+
+#. Theme Name of the theme
+#: style.css
+#: functions.php:68
+#: patterns/footer.php:14
+#: patterns/header.php:13
+msgid "Freelancer Design Portfolio"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://scintillawpthemes.com/product/freelancer-design-portfolio/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Showcase your creativity, skills, and professional design work with a modern freelancer portfolio built for WordPress. This portfolio theme is ideal for graphic designers, UI/UX designers, web designers, illustrators, branding specialists, and creative professionals who want to present their work in a polished and engaging way. Create an impressive online presence with dedicated sections for your projects, services, skills, experience, testimonials, and contact information. The clean and responsive design ensures your portfolio looks great across desktops, tablets, and mobile devices. Whether you are building your personal brand, attracting new clients, or highlighting your latest creative projects, this portfolio provides a professional foundation to help your work stand out. Easy to customize and suitable for freelancers, agencies, and creative studios, it combines simplicity, flexibility, and visual appeal to make your portfolio memorable."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "scintillawpthemes"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://scintillawpthemes.com/"
+msgstr ""
+
+#: functions.php:56
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:85
+msgid "Ink Pill"
+msgstr ""
+
+#: functions.php:93
+msgid "Outline Pill"
+msgstr ""
+
+#: functions.php:101
+msgid "Ghost Pill"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern description"
+msgid "Not found message with a search form and a link back to the homepage."
+msgstr ""
+
+#: patterns/404.php:15
+msgid "This page has moved on."
+msgstr ""
+
+#: patterns/404.php:19
+msgid "The page you are looking for does not exist, or it has been moved. Try a search, or head back to the homepage."
+msgstr ""
+
+#: patterns/404.php:22
+#: patterns/banner-search.php:11
+#: patterns/posts-grid.php:34
+msgid "Search"
+msgstr ""
+
+#: patterns/404.php:22
+msgid "Search this site…"
+msgstr ""
+
+#: patterns/404.php:26
+msgid "Back to homepage"
+msgstr ""
+
+#: patterns/about.php
+msgctxt "Pattern title"
+msgid "About"
+msgstr ""
+
+#: patterns/about.php
+msgctxt "Pattern description"
+msgid "Two column about section with a portrait, an experience badge, a promise list and a signature."
+msgstr ""
+
+#: patterns/about.php:14
+msgid "Art director reviewing printed layouts pinned to a studio wall"
+msgstr ""
+
+#: patterns/about.php:19
+msgid "15"
+msgstr ""
+
+#: patterns/about.php:23
+msgid "Years working independently, almost always with teams of under twenty people."
+msgstr ""
+
+#: patterns/about.php:30
+msgid "Background"
+msgstr ""
+
+#: patterns/about.php:34
+msgid "Forty projects taught me the same lesson forty times."
+msgstr ""
+
+#: patterns/about.php:38
+msgid "I spent my twenties inside agencies making things look expensive. Somewhere around the fourth rebrand that never shipped, I started asking what the work was actually for. These days I take fewer clients, ask the awkward questions in week one, and stay until the thing is live."
+msgstr ""
+
+#: patterns/about.php:43
+msgid "I read your support inbox before I open a design file."
+msgstr ""
+
+#: patterns/about.php:47
+msgid "One senior person on the work from first call to launch — nothing gets passed down."
+msgstr ""
+
+#: patterns/about.php:51
+msgid "If I think the project is the wrong project, you hear it before you pay me."
+msgstr ""
+
+#: patterns/about.php:57
+msgid "Signature of August Reyes"
+msgstr ""
+
+#: patterns/about.php:62
+msgid "See the work"
+msgstr ""
+
+#: patterns/banner-archive.php
+msgctxt "Pattern title"
+msgid "Archive Banner"
+msgstr ""
+
+#: patterns/banner-archive.php
+msgctxt "Pattern description"
+msgid "Mist page banner showing the archive title with a breadcrumb pill."
+msgstr ""
+
+#: patterns/banner-archive.php:11
+msgid "Archive"
+msgstr ""
+
+#: patterns/banner-archive.php:18
+#: patterns/banner-page.php:18
+#: patterns/banner-search.php:18
+#: patterns/header.php:17
+msgid "Home"
+msgstr ""
+
+#: patterns/banner-page.php
+msgctxt "Pattern title"
+msgid "Page Banner"
+msgstr ""
+
+#: patterns/banner-page.php
+msgctxt "Pattern description"
+msgid "Mist banner for static pages showing the page title with a breadcrumb pill."
+msgstr ""
+
+#: patterns/banner-page.php:11
+msgid "Page"
+msgstr ""
+
+#: patterns/banner-search.php
+msgctxt "Pattern title"
+msgid "Search Banner"
+msgstr ""
+
+#: patterns/banner-search.php
+msgctxt "Pattern description"
+msgid "Mist page banner showing the search results title with a breadcrumb pill."
+msgstr ""
+
+#: patterns/banner-single.php
+msgctxt "Pattern title"
+msgid "Single Post Banner"
+msgstr ""
+
+#: patterns/banner-single.php
+msgctxt "Pattern description"
+msgid "Mist banner for a single post showing the category, title, author and publish date."
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern description"
+msgid "Frequently asked questions in an accordion beside a short section heading."
+msgstr ""
+
+#: patterns/faq.php:10
+msgid "How long does a project usually take?"
+msgstr ""
+
+#: patterns/faq.php:11
+msgid "A full product engagement runs six weeks end to end. An identity is three to four. A second opinion is one week. If your deadline is tighter than that, tell me early and I will say honestly whether it fits."
+msgstr ""
+
+#: patterns/faq.php:15
+msgid "Is the price fixed?"
+msgstr ""
+
+#: patterns/faq.php:16
+msgid "Yes, wherever the scope is defined. One number, one payment schedule and a written list of what sits inside it. Anything outside becomes a conversation before work starts, never a surprise line on an invoice."
+msgstr ""
+
+#: patterns/faq.php:20
+msgid "Can you work alongside our engineers?"
+msgstr ""
+
+#: patterns/faq.php:21
+msgid "That is the normal arrangement. I join your stand-ups, write specs in whatever format your team already uses, and stay reachable for a month after handover so questions get answered rather than guessed at."
+msgstr ""
+
+#: patterns/faq.php:25
+msgid "What lands in my hands at the end?"
+msgstr ""
+
+#: patterns/faq.php:26
+msgid "Source files, a component library with every state documented, a token sheet, exported assets and a written spec covering behaviour and edge cases. Build engagements also include block patterns and a configured theme.json."
+msgstr ""
+
+#: patterns/faq.php:30
+msgid "Do you take small pieces of work?"
+msgstr ""
+
+#: patterns/faq.php:31
+msgid "Sometimes. A single landing page, a pricing rewrite or a one-week review all fit comfortably. Anything larger tends to work better as a short sprint than as hours scattered across a quarter."
+msgstr ""
+
+#: patterns/faq.php:35
+msgid "Who owns the work at the end?"
+msgstr ""
+
+#: patterns/faq.php:36
+msgid "You do, completely, once the final payment clears. Files transfer into your accounts rather than living in mine. I only ask permission to show the work publicly, and I will keep it private if you would rather."
+msgstr ""
+
+#: patterns/faq.php:45
+#: patterns/header.php:39
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php:49
+msgid "Asked before nearly every project."
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern description"
+msgid "Dark footer with brand summary, social links, two link columns, contact details and a legal bar."
+msgstr ""
+
+#: patterns/footer.php:18
+msgid "An independent art direction and design practice for teams of under twenty. Fewer clients, harder questions early, and a handover that does not quietly depend on me."
+msgstr ""
+
+#: patterns/footer.php:34
+msgid "Explore"
+msgstr ""
+
+#: patterns/footer.php:39
+#: patterns/header.php:19
+msgid "About"
+msgstr ""
+
+#: patterns/footer.php:43
+#: patterns/footer.php:62
+#: patterns/header.php:21
+msgid "Services"
+msgstr ""
+
+#: patterns/footer.php:47
+msgid "Selected work"
+msgstr ""
+
+#: patterns/footer.php:51
+msgid "Process"
+msgstr ""
+
+#: patterns/footer.php:55
+#: patterns/header.php:37
+msgid "Journal"
+msgstr ""
+
+#: patterns/footer.php:67
+msgid "Art direction"
+msgstr ""
+
+#: patterns/footer.php:71
+msgid "Interface design"
+msgstr ""
+
+#: patterns/footer.php:75
+msgid "Design systems"
+msgstr ""
+
+#: patterns/footer.php:79
+#: patterns/header.php:28
+msgid "Identity"
+msgstr ""
+
+#: patterns/footer.php:83
+msgid "Site build"
+msgstr ""
+
+#: patterns/footer.php:90
+msgid "Get in touch"
+msgstr ""
+
+#: patterns/footer.php:102
+msgid "123 Maplewood Lane Apartment 4B, Springfield, IL 62704 USA"
+msgstr ""
+
+#. translators: %s: current year.
+#: patterns/footer.php:111
+#, php-format
+msgid "Copyright © %s Freelancer Design Portfolio WordPress theme by ScintillaWPThemes"
+msgstr ""
+
+#: patterns/footer.php:117
+msgid "Privacy"
+msgstr ""
+
+#: patterns/footer.php:121
+msgid "Terms"
+msgstr ""
+
+#: patterns/footer.php:125
+msgid "Licence"
+msgstr ""
+
+#: patterns/footer.php:132
+msgid "Back to top"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern description"
+msgid "Sticky header with the studio logo, primary navigation and a pill call-to-action button."
+msgstr ""
+
+#: patterns/header.php:22
+msgid "Art Direction"
+msgstr ""
+
+#: patterns/header.php:24
+msgid "Interface Design"
+msgstr ""
+
+#: patterns/header.php:26
+msgid "Design Systems"
+msgstr ""
+
+#: patterns/header.php:31
+msgid "Toolkit"
+msgstr ""
+
+#: patterns/header.php:33
+msgid "Work"
+msgstr ""
+
+#: patterns/header.php:35
+msgid "Testimonial"
+msgstr ""
+
+#: patterns/header.php:44
+msgid "See our works"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern title"
+msgid "Hero"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern description"
+msgid "Three column introduction with a name headline, a framed portrait card with social links and an availability note."
+msgstr ""
+
+#: patterns/hero.php:14
+msgid "Hello. The name is"
+msgstr ""
+
+#: patterns/hero.php:18
+msgid "August"
+msgstr ""
+
+#: patterns/hero.php:18
+msgid "Reyes"
+msgstr ""
+
+#: patterns/hero.php:22
+msgid "I art-direct and design for teams who already know what they are building, and need it to feel like one thing instead of forty."
+msgstr ""
+
+#: patterns/hero.php:27
+msgid "Book a call"
+msgstr ""
+
+#: patterns/hero.php:35
+msgid "August Reyes, art director, photographed against a plain patterned wall"
+msgstr ""
+
+#: patterns/hero.php:50
+msgid "Two slots open from September 2026"
+msgstr ""
+
+#: patterns/hero.php:56
+msgid "Independent of the Year 2025"
+msgstr ""
+
+#: patterns/hero.php:56
+msgid "Art Direction &amp; Interface"
+msgstr ""
+
+#: patterns/hero.php:60
+msgid "Art"
+msgstr ""
+
+#: patterns/hero.php:60
+msgid "Direction"
+msgstr ""
+
+#: patterns/hero.php:77
+msgid "98%"
+msgstr ""
+
+#: patterns/hero.php:83
+msgid "210+"
+msgstr ""
+
+#: patterns/hero.php:87
+msgid "launches behind me"
+msgstr ""
+
+#: patterns/hero.php:92
+msgid "Working across nine time zones"
+msgstr ""
+
+#: patterns/journal.php
+msgctxt "Pattern title"
+msgid "Journal"
+msgstr ""
+
+#: patterns/journal.php
+msgctxt "Pattern description"
+msgid "Latest posts in a three column query loop with cover image, category pill, date, excerpt and a read link."
+msgstr ""
+
+#: patterns/journal.php:14
+msgid "Notebook"
+msgstr ""
+
+#: patterns/journal.php:18
+msgid "Things I keep having to explain."
+msgstr ""
+
+#: patterns/journal.php:24
+msgid "Every article"
+msgstr ""
+
+#: patterns/journal.php:44
+#: patterns/posts-grid.php:25
+msgid "Read article"
+msgstr ""
+
+#: patterns/journal.php:50
+msgid "No posts have been published yet. New writing will appear here."
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern title"
+msgid "Posts Grid"
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern description"
+msgid "Inheriting query loop of post cards with a no-results message and pagination."
+msgstr ""
+
+#: patterns/posts-grid.php:31
+msgid "Nothing found here. Try another search or head back to the homepage."
+msgstr ""
+
+#: patterns/posts-grid.php:34
+msgid "Search the journal…"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern description"
+msgid "Three client testimonial cards with star ratings, quotes and author avatars on a soft mist band."
+msgstr ""
+
+#: patterns/testimonials.php:12
+msgid "We briefed three studios before this one. August spent his first week inside our support inbox rather than a design file, then showed us the two screens costing us signups. Setup completion moved forty-four points."
+msgstr ""
+
+#: patterns/testimonials.php:13
+msgid "Priya Raghunathan"
+msgstr ""
+
+#: patterns/testimonials.php:14
+msgid "Co-founder, Brightsill"
+msgstr ""
+
+#: patterns/testimonials.php:19
+msgid "The handover is the part that surprised me. Our two engineers built the entire marketing site from his component library in eight days and never once had to message him."
+msgstr ""
+
+#: patterns/testimonials.php:20
+msgid "Tomas Berger"
+msgstr ""
+
+#: patterns/testimonials.php:21
+msgid "CTO, Coalfield"
+msgstr ""
+
+#: patterns/testimonials.php:26
+msgid "Fixed price, weekly demos, and in week two he told us to cut a feature rather than design it. That single conversation saved us a full quarter of engineering."
+msgstr ""
+
+#: patterns/testimonials.php:27
+msgid "Elena Marchetti"
+msgstr ""
+
+#: patterns/testimonials.php:28
+msgid "Head of Product, Petrichor"
+msgstr ""
+
+#: patterns/testimonials.php:38
+msgid "In their words"
+msgstr ""
+
+#: patterns/testimonials.php:42
+msgid "What clients say once the invoice is paid."
+msgstr ""
+
+#: patterns/testimonials.php:48
+msgid "Read the full cases"
+msgstr ""
+
+#: patterns/testimonials.php:59
+msgid "Rated 5 out of 5"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lime"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lime Deep"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Graphite"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Slate"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Mist"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Line"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Shell"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Mist Fade"
+msgstr ""
+
+#: theme.json
+msgctxt "Gradient name"
+msgid "Lime Fade"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Space Grotesk"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter Tight"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display 1"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display 2"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display 3"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Display 4"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Lead"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Body"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Mini"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Eyebrow"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Card Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Stat"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "7"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "8"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Card"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Lift"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Badge"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""

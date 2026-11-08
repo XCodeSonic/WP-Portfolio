@@ -1,0 +1,201 @@
+/**
+ * Freelancer Design Portfolio — Admin promo banner.
+ *
+ * Styled after the ScintillaWP Themes design system:
+ * sky #1E7BE8 / deep #0A3F9E / ink #06153A / lime #C9F45C
+ */
+
+.freelancer-design-portfoliomo-banner {
+	position: relative;
+	margin: 40px 20px 20px 0;
+	border-radius: 22px;
+	overflow: hidden;
+	color: #FFFFFF;
+	background:
+		radial-gradient(56% 120% at 12% 110%, rgba(255, 255, 255, 0.22), transparent 62%),
+		radial-gradient(42% 120% at 88% -10%, rgba(201, 244, 92, 0.20), transparent 64%),
+		linear-gradient(100deg, #06153A 0%, #0A3F9E 38%, #1E7BE8 72%, #3E9BF5 100%);
+	box-shadow: 0 10px 30px rgba(6, 21, 58, 0.22);
+}
+
+.freelancer-design-portfoliomo-banner::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-image:
+		linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+	background-size: 60px 60px;
+	-webkit-mask-image: linear-gradient(120deg, rgba(0, 0, 0, 0.9), transparent 68%);
+	mask-image: linear-gradient(120deg, rgba(0, 0, 0, 0.9), transparent 68%);
+	pointer-events: none;
+}
+
+.freelancer-design-portfoliomo-banner__inner {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: start;
+	gap: 20px;
+	padding: 30px 68px 30px 34px;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.freelancer-design-portfoliomo-banner__brand {
+	flex: 0 0 auto;
+}
+
+.freelancer-design-portfoliomo-banner__logo {
+	display: block;
+	height: 38px;
+	width: auto;
+	max-width: 100%;
+}
+
+.freelancer-design-portfoliomo-banner__title {
+	margin: 0 0 8px;
+	padding: 0;
+	color: #FFFFFF;
+	font-family: "Bricolage Grotesque", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: -0.035em;
+	line-height: 1.1;
+}
+
+.freelancer-design-portfoliomo-banner__text {
+	margin: 0;
+	max-width: 62ch;
+	color: rgba(255, 255, 255, 0.84);
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.freelancer-design-portfoliomo-banner__actions {
+	display: flex;
+	gap: 12px;
+	flex: 0 0 auto;
+	flex-wrap: wrap;
+	margin-top: 4px;
+}
+
+.freelancer-design-portfoliomo-banner__btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	height: 46px;
+	padding: 0 24px;
+	border-radius: 999px;
+	border: 1px solid transparent;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-decoration: none;
+	transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.freelancer-design-portfoliomo-banner__btn:hover {
+	transform: translateY(-2px);
+}
+
+.freelancer-design-portfoliomo-banner__btn:focus {
+	outline: 3px solid #A9DC33;
+	outline-offset: 3px;
+	box-shadow: none;
+}
+
+.freelancer-design-portfoliomo-banner__btn--buy {
+	background: #C9F45C;
+	color: #0B0E13;
+	border-color: #C9F45C;
+}
+
+.freelancer-design-portfoliomo-banner__btn--buy:hover,
+.freelancer-design-portfoliomo-banner__btn--buy:focus {
+	background: #A9DC33;
+	color: #0B0E13;
+	border-color: #A9DC33;
+}
+
+.freelancer-design-portfoliomo-banner__btn--demo {
+	background: rgba(255, 255, 255, 0.14);
+	color: #FFFFFF;
+	border-color: rgba(255, 255, 255, 0.4);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+}
+
+.freelancer-design-portfoliomo-banner__btn--demo:hover,
+.freelancer-design-portfoliomo-banner__btn--demo:focus {
+	background: rgba(255, 255, 255, 0.24);
+	color: #FFFFFF;
+	border-color: rgba(255, 255, 255, 0.6);
+}
+
+.freelancer-design-portfoliomo-banner__close {
+	position: absolute;
+	z-index: 3;
+	top: 16px;
+	right: 16px;
+	width: 34px;
+	height: 34px;
+	padding: 0;
+	background: rgba(255, 255, 255, 0.14);
+	color: #FFFFFF;
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 1;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.2s ease, color 0.2s ease, transform 0.18s ease;
+}
+
+.freelancer-design-portfoliomo-banner__close:hover,
+.freelancer-design-portfoliomo-banner__close:focus {
+	background: #C9F45C;
+	color: #0B0E13;
+	border-color: #C9F45C;
+	transform: rotate(90deg);
+	outline: none;
+}
+
+.freelancer-design-portfoliomo-banner.is-dismissing {
+	opacity: 0;
+	transform: translateY(-6px);
+	transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+@media (max-width: 782px) {
+	.freelancer-design-portfoliomo-banner {
+		margin: 12px 12px 12px 0;
+		border-radius: 14px;
+	}
+	.freelancer-design-portfoliomo-banner__inner {
+		padding: 22px 58px 22px 20px;
+		gap: 16px;
+	}
+	.freelancer-design-portfoliomo-banner__logo {
+		height: 30px;
+	}
+	.freelancer-design-portfoliomo-banner__title {
+		font-size: 22px;
+	}
+	.freelancer-design-portfoliomo-banner__text {
+		font-size: 14px;
+	}
+	.freelancer-design-portfoliomo-banner__actions {
+		width: 100%;
+	}
+	.freelancer-design-portfoliomo-banner__btn {
+		flex: 1 1 auto;
+		text-align: center;
+	}
+}

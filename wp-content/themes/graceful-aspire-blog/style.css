@@ -1,0 +1,639 @@
+/*
+Theme Name: Graceful Aspire Blog
+Theme URI: https://optimathemes.com/graceful-aspire-blog-theme/
+Author: Aslam
+Author URI: http://optimathemes.com/
+Description: Graceful Aspire Blog is a clean, minimal, and fully responsive WordPress theme designed for bloggers and content creators. Whether you are sharing stories about travel, food, fashion, tech, lifestyle, health, fitness, beauty, or running a personal or professional blog, this theme offers a modern layout with a focus on readability and user experience. Graceful Aspire Blog is Retina-ready, SEO-optimized, WooCommerce compatible, and supports RTL (Right-to-Left) languages, making it a versatile choice for creators around the world. With its simple yet elegant design, it is ideal for bloggers, writers, influencers and YouTubers looking to build a stylish and functional online presence.
+Template: graceful
+Version: 1.0.0
+Requires at least: 5.3
+Tested up to: 7.1
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: graceful-aspire-blog
+Tags: blog, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, custom-logo, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, e-commerce
+*/
+
+
+/*
+Customization of this child theme starts here
+*/
+
+/* style.css */
+
+
+/*--------------------------------------------------------------
+Header Sections
+--------------------------------------------------------------*/
+
+#main-navigation {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+}
+
+#graceful-post-slider {
+  padding: 40px;
+}
+
+.post-categories {
+  background: #f3f2f2;
+  border: 1px solid #e5e2e2;
+  padding: 0 10px;
+  line-height: 22px;
+}
+
+.single .site-images {
+  margin-bottom: 30px;
+}
+
+.site-images img {
+  border-radius: 8px;
+}
+
+.post-header-inner {
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.graceful-small-image-box {
+  border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+Featured Boxes Sections
+--------------------------------------------------------------*/
+
+#featured-boxes {
+  padding: 40px !important;
+  border-bottom: 1px solid #eee;
+}
+
+#featured-boxes .wrapped-content {
+  font-size: 0;
+  text-align: center;
+}
+
+#featured-boxes .featured-box {
+  position: relative;
+  float: left;
+}
+
+#featured-boxes a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#featured-boxes .graceful-wrap-outer {
+  padding: 12px;
+}
+
+#featured-boxes h4 {
+  display: inline-block;
+  padding: 11px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.50);
+  color: #ffffff !important;
+  transform: skewX(-15deg);
+}
+
+#featured-boxes .featured-box {
+  width: calc((100% - 50px) /3);
+  width: -webkit-calc((100% - 70px) /3);
+  margin-right: 34px;
+}
+
+#featured-boxes .featured-box:last-child {
+  margin-right: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .featured-box {
+    display: block;
+  }
+}
+
+aside .graceful-widget h2,
+#site-footer .graceful-widget .widget-title,
+#site-footer .graceful-widget h2,
+.footer-widgets .graceful-widget .widget-title,
+.footer-widgets .graceful-widget h2,
+.graceful-widget .widget-title,
+.graceful-widget h2 {
+  color: #111111 !important;
+  background: #f8f8f8 !important;
+  border: 1px solid #cccccc !important;
+  transform: skewX(-15deg);
+  width: 96%;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 8px 10px 7px;
+  font-weight: 700 !important;
+  border-radius: 7px;
+}
+
+aside .graceful-widget h2::after,
+#site-footer .graceful-widget .widget-title::after,
+.footer-widgets .graceful-widget .widget-title::after,
+.graceful-widget .widget-title::after,
+.graceful-widget h2::after {
+  display: none !important;
+}
+
+#graceful-post-slider .graceful-wrap-inner {
+  vertical-align: middle;
+}
+
+
+/* Media Query Min 768px
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  #graceful-post-slider .slide-item {
+    background-position: center;
+    height: 500px;
+  }
+
+  #graceful-post-slider.wrapped-content .slide-item {
+    height: 450px;
+  }
+
+  .graceful-slider-read-more a {
+    margin-bottom: 0;
+  }
+
+  .graceful-slider-info {
+    padding: 20px 20px 30px 20px;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.graceful-widget h2 {
+  font-weight: 700 !important;
+}
+
+#site-footer {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 480px) {
+  #featured-boxes .featured-box {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+Graceful Aspire Post Slider 
+--------------------------------------------------------------*/
+#graceful-aspire-post-slider-wrap .graceful-aspire-carousel-section {
+  padding-top: 40px;
+}
+
+#graceful-aspire-post-slider-wrap .owl-stage-outer {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#graceful-aspire-post-slider-wrap .graceful-aspire-carousel-section .item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  /*clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);*/
+  /*transform: skewX(-10deg);
+  overflow: hidden;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#graceful-aspire-post-slider-wrap .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+#graceful-aspire-post-slider-wrap .angled-overlay {
+  border-radius: 20px;
+  text-align: center;
+  max-width: 540px;
+  position: relative;
+  z-index: 2;
+  transform: skewX(-10deg);
+  /* cancels the skew inside */
+}
+
+#graceful-aspire-post-slider-wrap .carousel-device {
+  position: relative;
+}
+
+#graceful-aspire-post-slider-wrap .carousel-device-content {
+  color: #fff;
+  padding: 20px;
+}
+
+#graceful-aspire-post-slider-wrap .carousel-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#graceful-aspire-post-slider-wrap .carousel-title a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+#graceful-aspire-post-slider-wrap .carousel-title a:hover {
+  text-decoration: underline;
+}
+
+#graceful-aspire-post-slider-wrap .carousel-category {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff4d00;
+  margin-bottom: 10px;
+}
+
+#graceful-aspire-post-slider-wrap .owl-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+#graceful-aspire-post-slider-wrap .owl-dot span {
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0;
+  transform: skewX(-25deg);
+}
+
+#graceful-aspire-post-slider-wrap .owl-dot.active span {
+  background: #ffffff;
+}
+
+#graceful-aspire-post-slider-wrap .owl-nav {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#graceful-aspire-post-slider-wrap .owl-nav button {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  pointer-events: all;
+}
+
+#graceful-aspire-post-slider-wrap .owl-nav button:hover {
+  opacity: 1;
+}
+
+#graceful-aspire-post-slider-wrap .owl-nav svg {
+  fill: #ffffff;
+}
+
+#graceful-aspire-post-slider-wrap .owl-nav {
+  line-height: 13.6px !important;
+}
+
+/* Responsive */
+
+@media (max-width: 450px) {
+  #graceful-aspire-special-links {
+    max-width: 100% !important;
+  }
+
+  #graceful-aspire-post-slider-wrap .graceful-aspire-carousel-section .item {
+    height: 280px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 768px) {
+  #graceful-aspire-special-links {
+    max-width: 720px;
+  }
+
+  #graceful-aspire-post-slider-wrap .graceful-aspire-carousel-section .item {
+    height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #graceful-aspire-post-slider-wrap .angled-overlay {
+    padding: 10px;
+    min-width: unset;
+    max-width: 250px;
+  }
+
+  #graceful-aspire-post-slider-wrap .carousel-title {
+    font-size: 20px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+Special Links Sections
+--------------------------------------------------------------*/
+body.has-special-links .entry-header,
+body.has-special-links #site-header .entry-header {
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.graceful-aspire-special-links-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  scrollbar-width: none;
+}
+
+.graceful-aspire-special-links-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.graceful-aspire-special-links-wrap li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: 1 1 0;
+  min-width: 150px;
+  max-width: 22%;
+}
+
+.graceful-aspire-special-links-wrap li a,
+.graceful-aspire-special-link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 44px;
+  padding: 20px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #dddddd;
+  color: #000000;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  transition: transform 0.2s ease;
+  border-radius: 8px;
+}
+
+.graceful-aspire-special-links-wrap li a:hover,
+.graceful-aspire-special-link-box:hover {
+  -webkit-transform: skew(-15deg) scale(1.05);
+  transform: skew(-15deg) scale(1.05);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+
+  #graceful-aspire-special-links {
+    max-width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .graceful-aspire-special-links-wrap {
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .graceful-aspire-special-links-wrap li,
+  .graceful-aspire-special-link-box {
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 6px);
+    min-width: 120px;
+  }
+
+  .graceful-aspire-special-links-wrap li a,
+  .graceful-aspire-special-link-box {
+    font-size: 15px;
+    padding: 8px 14px;
+    height: 38px;
+    border-radius: 6px;
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+  .graceful-aspire-special-links-wrap li a:hover,
+  .graceful-aspire-special-link-box:hover {
+    -webkit-transform: skew(-10deg) scale(1.02);
+    transform: skew(-10deg) scale(1.02);
+  }
+}
+
+@media (max-width: 480px) {
+
+  #graceful-aspire-special-links {
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+
+  .graceful-aspire-special-links-wrap {
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .graceful-aspire-special-links-wrap li,
+  .graceful-aspire-special-link-box {
+    flex: 1 1 calc(50% - 8px);
+    max-width: calc(50% - 4px);
+    min-width: 100px;
+  }
+
+  .graceful-aspire-special-links-wrap li a,
+  .graceful-aspire-special-link-box {
+    font-size: 13px;
+    padding: 6px 10px;
+    height: 34px;
+    line-height: 1.2;
+    border-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transform: skew(-10deg);
+    transform: skew(-10deg);
+  }
+
+  .graceful-aspire-special-links-wrap li a:hover,
+  .graceful-aspire-special-link-box:hover {
+    -webkit-transform: skew(-10deg) scale(1.02);
+    transform: skew(-10deg) scale(1.02);
+  }
+}
+
+@media (max-width: 360px) {
+
+  .graceful-aspire-special-links-wrap {
+    gap: 6px;
+  }
+
+  .graceful-aspire-special-links-wrap li,
+  .graceful-aspire-special-link-box {
+    flex: 1 1 calc(50% - 6px);
+    max-width: calc(50% - 3px);
+    min-width: 90px;
+  }
+
+  .graceful-aspire-special-links-wrap li a,
+  .graceful-aspire-special-link-box {
+    font-size: 11px;
+    padding: 5px 6px;
+    height: 30px;
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg);
+  }
+}
+
+
+.continue-read {
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  transform: skewX(-10deg);
+}
+
+.continue-read a {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Archive & Search Header
+   ========================================================================== */
+.graceful-aspire-archive-header {
+  background: #f8f8f8;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 35px 25px;
+  margin-bottom: 35px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.graceful-aspire-archive-header .archive-header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.graceful-aspire-archive-header .archive-header-avatar {
+  margin-bottom: 15px;
+}
+
+.graceful-aspire-archive-header .archive-header-avatar img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  object-fit: cover;
+}
+
+.graceful-aspire-archive-header .archive-header-subtitle {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #777777;
+  margin-bottom: 10px;
+  padding: 4px 14px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+.graceful-aspire-archive-header .archive-header-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #222222;
+  margin: 6px 0 0 0;
+  word-break: break-word;
+}
+
+.graceful-aspire-archive-header .archive-header-desc {
+  margin-top: 14px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.graceful-aspire-archive-header .archive-header-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.content-column .no-result-item {
+  list-style: none;
+  border-bottom: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .graceful-aspire-archive-header {
+    padding: 25px 18px;
+    margin-bottom: 25px;
+  }
+
+  .graceful-aspire-archive-header .archive-header-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graceful-aspire-archive-header {
+    padding: 20px 14px;
+  }
+
+  .graceful-aspire-archive-header .archive-header-title {
+    font-size: 20px;
+  }
+
+  .graceful-aspire-archive-header .archive-header-avatar img {
+    width: 60px;
+    height: 60px;
+  }
+}

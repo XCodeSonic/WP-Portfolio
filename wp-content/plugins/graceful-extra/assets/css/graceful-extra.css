@@ -1,0 +1,113 @@
+/**
+ * Graceful Extra Frontend Stylesheet
+ */
+
+/* ==========================================================================
+   1. Floating Back to Top Button
+   ========================================================================== */
+#graceful-extra-btt {
+	position: fixed;
+	bottom: 25px;
+	width: 44px;
+	height: 44px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 18px;
+	text-decoration: none;
+	z-index: 9999;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	-webkit-transform: translateY(14px);
+	transform: translateY(14px);
+	-webkit-transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		visibility 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		-webkit-transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		box-shadow 0.2s ease;
+	transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		visibility 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+		box-shadow 0.2s ease;
+}
+
+#graceful-extra-btt.is-visible {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+#graceful-extra-btt:hover {
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.26);
+	-webkit-transform: translateY(-3px);
+	transform: translateY(-3px);
+}
+
+#graceful-extra-btt i {
+	line-height: 1;
+	display: block;
+}
+
+/* ==========================================================================
+   2. Post / Page Hide Title Option
+   ========================================================================== */
+.graceful-extra-hide-title .page-title,
+.graceful-extra-hide-title .post-title,
+.graceful-extra-hide-title .entry-title {
+	display: none !important;
+}
+
+/* ==========================================================================
+   3. Post / Page Disable Sidebar (Full Width) Option
+   ========================================================================== */
+.graceful-extra-no-sidebar .sidebar-left-wrap,
+.graceful-extra-no-sidebar .sidebar-right-wrap {
+	display: none !important;
+}
+
+.graceful-extra-no-sidebar .content-wrap {
+	width: 100% !important;
+	max-width: 100% !important;
+	float: none !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+/* ==========================================================================
+   4. Post Header Metrics (Reading Time & Views)
+   ========================================================================== */
+.post-meta .graceful-extra-meta-item {
+	display: inline-block;
+	color: #111111;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	vertical-align: baseline;
+	margin-left: 6px;
+}
+
+.post-meta .graceful-extra-meta-item::before {
+	content: "\00b7";
+	margin-right: 6px;
+	color: #888888;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.post-meta .graceful-extra-meta-item i {
+	margin-right: 4px;
+	color: #555555;
+	font-size: 12px;
+}
+
+

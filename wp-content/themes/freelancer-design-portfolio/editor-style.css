@@ -1,0 +1,39 @@
+/* Editor-only tweaks. style.css is also enqueued in the editor
+   (see add_editor_style in functions.php), so component styles are not repeated here. */
+
+/* Blocks pick up extra wrappers in the editor — restore the positioning context
+   the absolutely placed overlays rely on. */
+.editor-styles-wrapper .fdp-hero-photo,
+.editor-styles-wrapper .fdp-about-img,
+.editor-styles-wrapper .fdp-post-media {
+	position: relative;
+}
+
+.editor-styles-wrapper .fdp-hero-social,
+.editor-styles-wrapper .fdp-about-badge {
+	z-index: 3;
+}
+
+/* A sticky header would otherwise float over the editor toolbar. */
+.editor-styles-wrapper .fdp-hdr {
+	position: static;
+}
+
+/* The reveal animation must never hide content while editing. */
+.editor-styles-wrapper .fdp-rev {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+/* The fixed back-to-top button has no meaning inside the canvas. */
+.editor-styles-wrapper .fdp-totop {
+	position: static;
+	opacity: 1;
+	transform: none;
+	pointer-events: auto;
+}
+
+/* Breadcrumb pill should hug its content in the editor too. */
+.editor-styles-wrapper .fdp-crumbs {
+	max-width: fit-content !important;
+}

@@ -1,0 +1,1649 @@
+/*
+Theme Name: Freelancer Design Portfolio
+Theme URI: https://scintillawpthemes.com/product/freelancer-design-portfolio/
+Author: scintillawpthemes
+Author URI: https://scintillawpthemes.com/
+Description: Showcase your creativity, skills, and professional design work with a modern freelancer portfolio built for WordPress. This portfolio theme is ideal for graphic designers, UI/UX designers, web designers, illustrators, branding specialists, and creative professionals who want to present their work in a polished and engaging way. Create an impressive online presence with dedicated sections for your projects, services, skills, experience, testimonials, and contact information. The clean and responsive design ensures your portfolio looks great across desktops, tablets, and mobile devices. Whether you are building your personal brand, attracting new clients, or highlighting your latest creative projects, this portfolio provides a professional foundation to help your work stand out. Easy to customize and suitable for freelancers, agencies, and creative studios, it combines simplicity, flexibility, and visual appeal to make your portfolio memorable.
+Version: 1.3
+Requires at least: 6.0
+Requires PHP: 7.4
+Tested up to: 7.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: freelancer-design-portfolio
+Domain Path: /languages
+Tags: blog, portfolio, photography, one-column, two-columns, custom-colors, custom-menu, custom-logo, sticky-post, threaded-comments, grid-layout, custom-background, rtl-language-support, featured-images, wide-blocks, editor-style, full-site-editing, block-patterns, block-styles, template-editing, translation-ready
+*/
+
+:root,
+body {
+    --fdp-lime: #C8F14D;
+    --fdp-lime-deep: #B2DF33;
+    --fdp-ink: #101110;
+    --fdp-graphite: #2B2C2A;
+    --fdp-slate: #6E7269;
+    --fdp-mist: #F2F3EF;
+    --fdp-line: #E3E5DE;
+    --fdp-shell: #FFFFFF;
+
+    --fdp-r-sm: 10px;
+    --fdp-r-md: 18px;
+    --fdp-r-lg: 26px;
+    --fdp-r-pill: 999px;
+
+    --fdp-pad: clamp(20px, calc((100vw - 1320px) / 2), 300px);
+    --fdp-sec: clamp(64px, 7vw, 110px);
+    --fdp-ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+/* The whole site sits on a white shell that caps at 1920px, so the lime body
+   colour shows as a frame on very wide screens. overflow-x:clip is used rather
+   than hidden so the sticky header keeps working. */
+.wp-site-blocks {
+    max-width: 1920px;
+    margin-inline: auto;
+    background: var(--fdp-shell);
+    overflow-x: clip;
+    position: relative;
+}
+
+/* Section rhythm shared by every full-width band. */
+.fdp-wrap {
+    padding-left: var(--fdp-pad);
+    padding-right: var(--fdp-pad);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:focus-visible {
+    outline: 3px solid var(--fdp-ink);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.fdp-muted {
+    color: var(--fdp-slate);
+}
+
+/* Eyebrow label with a lime dot. */
+.fdp-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--fdp-slate);
+    margin: 0;
+}
+
+.fdp-eyebrow::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--fdp-lime-deep);
+    flex: none;
+}
+
+.fdp-eyebrow.is-light {
+    color: rgba(255, 255, 255, .6);
+}
+
+/* Section heading row: copy left, action right. */
+.fdp-sh {
+    align-items: flex-end;
+}
+
+.fdp-sh .fdp-sh-l {
+    max-width: 60ch;
+}
+
+/* ============================================================
+   2. Buttons
+   ============================================================ */
+.wp-block-button__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 8px 8px 26px;
+    white-space: nowrap;
+    box-shadow: none;
+    transition: transform .35s var(--fdp-ease), background-color .3s var(--fdp-ease), color .3s var(--fdp-ease), box-shadow .3s var(--fdp-ease);
+}
+
+.wp-block-button__link::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    flex: none;
+    border-radius: 50%;
+    background: url(assets/images/icons/btn-arrow-ink.svg) center / contain no-repeat;
+    transition: transform .45s var(--fdp-ease);
+}
+
+.wp-block-button__link:hover {
+    transform: translateY(-2px);
+}
+
+.wp-block-button__link:hover::after {
+    transform: rotate(45deg);
+}
+
+/* Ink button: dark pill, lime icon disc. */
+.fdp-btn-ink .wp-block-button__link,
+.wp-block-button.is-style-fdp-btn-ink .wp-block-button__link {
+    background-color: var(--fdp-ink);
+    color: #fff;
+}
+
+.fdp-btn-ink .wp-block-button__link::after,
+.wp-block-button.is-style-fdp-btn-ink .wp-block-button__link::after {
+    background-image: url(assets/images/icons/btn-arrow-lime.svg);
+}
+
+.fdp-btn-ink .wp-block-button__link:hover,
+.wp-block-button.is-style-fdp-btn-ink .wp-block-button__link:hover {
+    background-color: var(--fdp-graphite);
+    color: #fff;
+}
+
+/* Outline button: hairline pill on light backgrounds. */
+.fdp-btn-outline .wp-block-button__link,
+.wp-block-button.is-style-fdp-btn-outline .wp-block-button__link {
+    background-color: transparent;
+    color: var(--fdp-ink);
+    box-shadow: inset 0 0 0 1.5px var(--fdp-line);
+}
+
+.fdp-btn-outline .wp-block-button__link::after,
+.wp-block-button.is-style-fdp-btn-outline .wp-block-button__link::after {
+    background-image: url(assets/images/icons/btn-arrow-mist.svg);
+}
+
+.fdp-btn-outline .wp-block-button__link:hover,
+.wp-block-button.is-style-fdp-btn-outline .wp-block-button__link:hover {
+    background-color: transparent;
+    color: var(--fdp-ink);
+    box-shadow: inset 0 0 0 1.5px var(--fdp-ink);
+}
+
+/* Ghost button for dark surfaces. */
+.fdp-btn-ghost .wp-block-button__link,
+.wp-block-button.is-style-fdp-btn-ghost .wp-block-button__link {
+    background-color: rgba(255, 255, 255, .1);
+    color: #fff;
+    box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .22);
+}
+
+.fdp-btn-ghost .wp-block-button__link::after,
+.wp-block-button.is-style-fdp-btn-ghost .wp-block-button__link::after {
+    background-image: url(assets/images/icons/btn-arrow-lime.svg);
+}
+
+.fdp-btn-ghost .wp-block-button__link:hover,
+.wp-block-button.is-style-fdp-btn-ghost .wp-block-button__link:hover {
+    background-color: rgba(255, 255, 255, .18);
+    color: #fff;
+}
+
+/* ------------------------------------------------------------
+   Fluid block gaps
+
+   WordPress refuses any layout blockGap value containing brackets, so
+   clamp() gaps set on a block are dropped from the generated layout CSS.
+   They are declared here instead, one notch more specific than the
+   generated `.wp-container-*` rule so they win wherever it is printed.
+   ------------------------------------------------------------ */
+.wp-block-columns.fdp-hero-grid {
+    gap: clamp(20px, 2.4vw, 52px);
+}
+
+.wp-block-columns.fdp-about-grid {
+    gap: clamp(30px, 4.4vw, 72px);
+}
+
+.wp-block-columns.fdp-tst-grid {
+    gap: clamp(14px, 1.7vw, 22px);
+}
+
+.wp-block-columns.fdp-posts {
+    gap: clamp(16px, 1.9vw, 26px);
+}
+
+.wp-block-columns.fdp-faq-grid {
+    gap: clamp(28px, 4vw, 64px);
+}
+
+.wp-block-columns.fdp-ftr-top {
+    gap: clamp(26px, 3vw, 48px);
+}
+
+.wp-block-post-template.fdp-post-template {
+    gap: clamp(16px, 1.9vw, 26px);
+}
+
+/* ============================================================
+   3. Header
+   ============================================================ */
+.fdp-hdr {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    background: rgba(255, 255, 255, .92);
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s var(--fdp-ease), box-shadow .3s var(--fdp-ease);
+}
+
+/* backdrop-filter turns this element into the containing block for its fixed
+   descendants, which would trap the mobile overlay inside the header box.
+   Blur only while the overlay menu is closed. */
+.fdp-hdr:not(:has(.wp-block-navigation__responsive-container.is-menu-open)) {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.fdp-hdr.is-stuck {
+    border-bottom-color: var(--fdp-line);
+    box-shadow: 0 10px 30px -24px rgba(16, 17, 16, .5);
+}
+
+.fdp-hdr-in {
+    min-height: 82px;
+}
+
+.fdp-brand img {
+    width: 164px;
+    max-width: 46vw;
+    height: auto;
+}
+
+/* Primary navigation */
+.fdp-nav .wp-block-navigation__container {
+    gap: clamp(14px, 1.9vw, 30px);
+}
+
+.fdp-nav .wp-block-navigation__submenu-container {
+    gap: 0;
+}
+
+.fdp-nav .wp-block-navigation-item__content {
+    color: var(--fdp-slate);
+    position: relative;
+    padding: 6px 0;
+    transition: color .25s var(--fdp-ease);
+}
+
+.fdp-nav .wp-block-navigation-item__content::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: var(--fdp-ink);
+    transition: width .3s var(--fdp-ease);
+}
+
+.fdp-nav .wp-block-navigation-item:hover > .wp-block-navigation-item__content,
+.fdp-nav .wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content {
+    color: var(--fdp-ink);
+}
+
+.fdp-nav .wp-block-navigation-item:hover > .wp-block-navigation-item__content::after,
+.fdp-nav .wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content::after {
+    width: 100%;
+}
+
+/* Submenus */
+.fdp-nav .wp-block-navigation__submenu-container {
+    background: #fff;
+    border: 1px solid var(--fdp-line);
+    border-radius: var(--fdp-r-md);
+    padding: 8px;
+    box-shadow: 0 24px 50px -34px rgba(16, 17, 16, .6);
+    min-width: 226px;
+}
+
+.fdp-nav .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+    padding: 9px 14px;
+    border-radius: var(--fdp-r-sm);
+    width: 100%;
+}
+
+.fdp-nav .wp-block-navigation__submenu-container .wp-block-navigation-item__content::after {
+    display: none;
+}
+
+.fdp-nav .wp-block-navigation__submenu-container .wp-block-navigation-item:hover > .wp-block-navigation-item__content {
+    background: var(--fdp-mist);
+}
+
+/* Burger + overlay */
+.fdp-nav .wp-block-navigation__responsive-container-open {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background: var(--fdp-mist);
+    align-items: center;
+    justify-content: center;
+    color: var(--fdp-ink);
+}
+
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open {
+    background: #fff;
+    padding: 26px var(--fdp-pad) 40px;
+}
+
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--fdp-ink);
+    padding: 12px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--fdp-line);
+}
+
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content::after {
+    display: none;
+}
+
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 0 14px;
+}
+
+/* The overlay menu is a left aligned, full width stack in the reference. */
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content,
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container,
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item,
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
+    width: 100%;
+    align-items: stretch;
+    text-align: left;
+}
+
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container,
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
+    gap: 0;
+}
+
+.fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--fdp-mist);
+    color: var(--fdp-ink);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reference switches to the burger at 1000px, not the core 600px default. */
+@media (min-width: 600px) and (max-width: 1000px) {
+    .fdp-nav .wp-block-navigation__responsive-container:not(.is-menu-open) {
+        display: none;
+    }
+
+    .fdp-nav .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex;
+    }
+
+    .fdp-nav .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
+        display: flex;
+    }
+}
+
+/* `body .is-layout-flex{display:flex}` from Global Styles outranks a single
+   class, so the hide rule needs one more class to win. */
+@media (max-width: 1000px) {
+    .fdp-hdr-in .fdp-hdr-cta {
+        display: none;
+    }
+}
+
+/* ============================================================
+   4. Hero
+   ============================================================ */
+.fdp-hero {
+    position: relative;
+    overflow: hidden;
+    padding-top: clamp(38px, 4.4vw, 64px);
+    padding-bottom: clamp(30px, 3.4vw, 52px);
+}
+
+/* Slowly turning asterisk in the lower left, exactly as the reference. */
+.fdp-hero::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--fdp-pad) + 40px);
+    bottom: 26px;
+    width: 58px;
+    height: 58px;
+    background: var(--fdp-line);
+    -webkit-mask: url(assets/images/icons/asterisk.svg) center / contain no-repeat;
+    mask: url(assets/images/icons/asterisk.svg) center / contain no-repeat;
+    animation: fdp-spin 26s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes fdp-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.fdp-hero-grid {
+    align-items: center;
+    gap: clamp(20px, 2.4vw, 52px);
+}
+
+.fdp-hero-hi {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 500;
+    font-size: clamp(16px, 1.4vw, 20px);
+    color: var(--fdp-graphite);
+    margin: 0;
+}
+
+.fdp-hero-name {
+    line-height: .9;
+}
+
+.fdp-hero-copy {
+    max-width: 40ch;
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--fdp-slate);
+    margin: 0;
+}
+
+/* Photo card */
+.fdp-hero-card {
+    background: var(--fdp-shell);
+    border-radius: var(--fdp-r-lg);
+    padding: 16px 16px 0;
+    box-shadow: 0 40px 80px -50px rgba(16, 17, 16, .55), 0 0 0 1px var(--fdp-line);
+}
+
+.fdp-hero-photo {
+    position: relative;
+    border-radius: var(--fdp-r-md);
+    overflow: hidden;
+    background: var(--fdp-mist);
+}
+
+.fdp-hero-photo .wp-block-image,
+.fdp-hero-photo figure {
+    margin: 0;
+}
+
+.fdp-hero-photo img {
+    width: 100%;
+    aspect-ratio: 1 / 1.26;
+    object-fit: cover;
+    object-position: center 18%;
+    display: block;
+}
+
+.fdp-hero-social {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+}
+
+.fdp-hero-social .wp-block-social-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .82);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    display: grid;
+    place-items: center;
+    transition: background-color .28s var(--fdp-ease), transform .28s var(--fdp-ease);
+}
+
+/* Core ships `.wp-block-social-links .wp-block-social-link.wp-social-link
+   {display:inline-block}` at three classes, so the disc cannot be made a grid
+   from here. Centre the glyph by letting the anchor fill the disc instead. */
+.fdp-hero-social .wp-block-social-link a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fdp-graphite);
+    padding: 0;
+}
+
+.fdp-hero-social .wp-block-social-link svg {
+    width: 17px;
+    height: 17px;
+}
+
+.fdp-hero-social .wp-block-social-link:hover {
+    background: var(--fdp-ink);
+    transform: translateY(-2px);
+}
+
+.fdp-hero-social .wp-block-social-link:hover a {
+    color: var(--fdp-lime);
+}
+
+/* Availability line with the pulsing live dot. */
+.fdp-hero-avail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 16px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.fdp-hero-avail::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3FA34D;
+    position: relative;
+    flex: none;
+    box-shadow: 0 0 0 5px rgba(63, 163, 77, .16);
+    animation: fdp-pulse 2.4s ease-out infinite;
+}
+
+@keyframes fdp-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(63, 163, 77, .45);
+    }
+    100% {
+        box-shadow: 0 0 0 9px rgba(63, 163, 77, 0);
+    }
+}
+
+/* Right rail */
+.fdp-hero-right {
+    border-left: 1.5px solid var(--fdp-line);
+    padding-left: clamp(18px, 1.7vw, 26px);
+}
+
+.fdp-hero-role {
+    font-size: 15px;
+    color: var(--fdp-slate);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.fdp-hero-title2 {
+    font-size: clamp(28px, 3.4vw, 46px);
+}
+
+.fdp-stack {
+    display: flex;
+    align-items: center;
+}
+
+/* The figures are the flex items, so the overlap has to live on them rather
+   than on the images, otherwise the boxes still reserve their full width.
+   Two classes are needed to outrank the `body .is-layout-flex > *` margin
+   reset that Global Styles prints. */
+.wp-block-group.fdp-stack > * {
+    flex: none;
+    margin: 0 0 0 -11px;
+}
+
+.wp-block-group.fdp-stack > *:first-child {
+    margin-left: 0;
+}
+
+.fdp-stack img,
+.fdp-stack .fdp-stack-more {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 2.5px solid #fff;
+    box-sizing: border-box;
+}
+
+.fdp-stack img {
+    object-fit: cover;
+    display: block;
+}
+
+.fdp-stack .fdp-stack-more {
+    display: grid;
+    place-items: center;
+    background: var(--fdp-ink);
+    color: #fff;
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.fdp-hero-kpi {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.fdp-hero-kpi-label {
+    font-size: 14px;
+    color: var(--fdp-slate);
+    margin: 0;
+}
+
+.fdp-hero-note {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+@media (max-width: 1080px) {
+    /* Reference drops to two columns here: intro and photo side by side with
+       the stats rail spanning the full width underneath. */
+    /* Core forces `flex-wrap:nowrap!important` on columns above 782px, and the
+       column widths are inline styles, so both need !important to re-flow. */
+    .wp-block-columns.fdp-hero-grid {
+        flex-wrap: wrap !important;
+    }
+
+    /* Basis is deliberately under half so the column padding and the row gap
+       cannot tip a pair onto separate lines; flex-grow takes back the slack. */
+    .fdp-hero-grid > .wp-block-column {
+        flex-grow: 1;
+        flex-basis: calc(50% - 60px) !important;
+    }
+
+    .fdp-hero-grid > .fdp-hero-right {
+        flex-basis: 100% !important;
+    }
+
+    .fdp-hero-right {
+        border-left: 0;
+        padding-left: 0;
+        border-top: 1.5px solid var(--fdp-line);
+        padding-top: 26px;
+    }
+
+    .fdp-hero::after {
+        display: none;
+    }
+}
+
+/* ============================================================
+   5. About
+   ============================================================ */
+.fdp-about-grid {
+    align-items: center;
+}
+
+.fdp-about-img {
+    position: relative;
+    border-radius: var(--fdp-r-lg);
+    overflow: hidden;
+    background: var(--fdp-mist);
+}
+
+.fdp-about-img .wp-block-image,
+.fdp-about-img figure {
+    margin: 0;
+}
+
+.fdp-about-img img {
+    width: 100%;
+    aspect-ratio: 1 / 1.06;
+    object-fit: cover;
+    display: block;
+}
+
+.fdp-about-badge {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--fdp-r-md);
+    padding: 18px 20px;
+}
+
+.fdp-about-badge-num {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -.035em;
+    line-height: 1;
+    margin: 0;
+    flex: none;
+}
+
+.fdp-about-badge-text {
+    font-size: 13px;
+    color: var(--fdp-slate);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Checked promise list */
+.fdp-about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+
+.fdp-about-list li {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    font-size: 15.5px;
+    line-height: 1.6;
+}
+
+.fdp-about-list li::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    flex: none;
+    margin-top: 2px;
+    background: url(assets/images/icons/check-circle-lime.svg) center / contain no-repeat;
+}
+
+.fdp-about-sign {
+    align-items: center;
+}
+
+.fdp-about-sign img {
+    width: 150px;
+    height: auto;
+}
+
+/* ============================================================
+   6. Testimonials
+   ============================================================ */
+.fdp-tst {
+    background: var(--fdp-mist);
+}
+
+.fdp-tst-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background: #fff;
+    border-radius: var(--fdp-r-md);
+    transition: transform .35s var(--fdp-ease), box-shadow .35s var(--fdp-ease);
+}
+
+.fdp-tst-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 28px 56px -40px rgba(16, 17, 16, .6);
+}
+
+.fdp-tst-top {
+    position: relative;
+    align-items: center;
+}
+
+.fdp-tst-stars img {
+    width: 96px;
+    height: auto;
+    display: block;
+}
+
+/* Faded quote glyph on the right of the card head. */
+.fdp-tst-top::after {
+    content: "";
+    width: 26px;
+    height: 26px;
+    flex: none;
+    margin-left: auto;
+    opacity: .28;
+    background: var(--fdp-slate);
+    -webkit-mask: url(assets/images/icons/quote.svg) center / contain no-repeat;
+    mask: url(assets/images/icons/quote.svg) center / contain no-repeat;
+}
+
+.fdp-tst-quote {
+    font-size: 15.4px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.fdp-tst-who {
+    align-items: center;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--fdp-line);
+}
+
+.fdp-tst-who img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: none;
+    display: block;
+}
+
+.fdp-tst-name {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.fdp-tst-role {
+    font-size: 12.8px;
+    color: var(--fdp-slate);
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ============================================================
+   7. Journal / post cards
+   ============================================================ */
+.fdp-posts .wp-block-post-template {
+    gap: clamp(16px, 1.9vw, 26px);
+}
+
+.fdp-post {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.fdp-post-media {
+    border-radius: var(--fdp-r-md);
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--fdp-mist), var(--fdp-line));
+}
+
+.fdp-post-media img {
+    width: 100%;
+    aspect-ratio: 16 / 11;
+    object-fit: cover;
+    display: block;
+    transition: transform .8s var(--fdp-ease);
+}
+
+.fdp-post:hover .fdp-post-media img {
+    transform: scale(1.05);
+}
+
+.fdp-post-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12.6px;
+    color: var(--fdp-slate);
+}
+
+.fdp-post-meta a {
+    color: inherit;
+}
+
+/* Category pill */
+.fdp-post-cat,
+.fdp-post-cat a {
+    font-weight: 600;
+    color: var(--fdp-ink);
+}
+
+.fdp-post-cat {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    background: var(--fdp-lime);
+    padding: 4px 11px;
+    border-radius: var(--fdp-r-pill);
+    line-height: 1.4;
+}
+
+.fdp-post-title a {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size .35s var(--fdp-ease);
+}
+
+.fdp-post:hover .fdp-post-title a {
+    background-size: 100% 1px;
+}
+
+.fdp-post-excerpt {
+    font-size: 14.6px;
+    color: var(--fdp-slate);
+    line-height: 1.66;
+}
+
+.fdp-post-excerpt p {
+    margin: 0;
+}
+
+.fdp-post-more {
+    font-size: 14px;
+}
+
+a.fdp-post-more,
+.fdp-post-more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    color: var(--fdp-ink);
+}
+
+a.fdp-post-more::after,
+.fdp-post-more a::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    flex: none;
+    background: currentColor;
+    -webkit-mask: url(assets/images/icons/arrow-up-right.svg) center / contain no-repeat;
+    mask: url(assets/images/icons/arrow-up-right.svg) center / contain no-repeat;
+    transition: transform .4s var(--fdp-ease);
+}
+
+.fdp-post:hover a.fdp-post-more::after,
+.fdp-post-more a::after {
+    transform: translate(3px, -3px);
+}
+
+/* ============================================================
+   8. FAQ (core/details accordion)
+   ============================================================ */
+.fdp-faq-grid {
+    align-items: flex-start;
+}
+
+.fdp-faq-list {
+    border-top: 1px solid var(--fdp-line);
+}
+
+.fdp-faq-item {
+    border-bottom: 1px solid var(--fdp-line);
+    margin: 0;
+}
+
+.fdp-faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 0;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    font-size: clamp(16px, 1.5vw, 19px);
+    letter-spacing: -.022em;
+    line-height: 1.35;
+    color: var(--fdp-ink);
+}
+
+.fdp-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.fdp-faq-item summary::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    flex: none;
+    border-radius: 50%;
+    background: url(assets/images/icons/plus-circle-mist.svg) center / contain no-repeat;
+    transition: transform .4s var(--fdp-ease);
+}
+
+.fdp-faq-item[open] summary::after {
+    background-image: url(assets/images/icons/plus-circle-lime.svg);
+    transform: rotate(180deg);
+}
+
+.fdp-faq-item .wp-block-details__content,
+.fdp-faq-item > *:not(summary) {
+    font-size: 15px;
+    color: var(--fdp-slate);
+    line-height: 1.7;
+}
+
+.fdp-faq-item > p:not(:first-of-type),
+.fdp-faq-item > .wp-block-paragraph {
+    padding: 0 60px 24px 0;
+    margin: 0;
+}
+
+.fdp-faq-aside {
+    background: var(--fdp-mist);
+    border-radius: var(--fdp-r-lg);
+}
+
+/* ============================================================
+   9. Footer
+   ============================================================ */
+.fdp-ftr {
+    background: var(--fdp-ink);
+    color: #fff;
+}
+
+.fdp-ftr h2,
+.fdp-ftr h3,
+.fdp-ftr h4,
+.fdp-ftr h5,
+.fdp-ftr h6 {
+    color: #fff;
+}
+
+.fdp-ftr-logo img {
+    width: 164px;
+    max-width: 60vw;
+    height: auto;
+}
+
+.fdp-ftr-about {
+    font-size: 14.6px;
+    color: rgba(255, 255, 255, .58);
+    line-height: 1.7;
+    max-width: 38ch;
+    margin: 0;
+}
+
+.fdp-ftr-title {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .45);
+    margin: 0;
+}
+
+.fdp-ftr-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 11px;
+}
+
+.fdp-ftr-links li {
+    font-size: 14.8px;
+}
+
+.fdp-ftr-links a {
+    color: rgba(255, 255, 255, .74);
+    transition: color .25s var(--fdp-ease);
+}
+
+.fdp-ftr-links a:hover {
+    color: var(--fdp-lime);
+}
+
+.fdp-ftr-soc .wp-block-social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .2);
+    display: grid;
+    place-items: center;
+    transition: background-color .28s var(--fdp-ease), box-shadow .28s var(--fdp-ease);
+}
+
+.fdp-ftr-soc .wp-block-social-link a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0;
+}
+
+.fdp-ftr-soc .wp-block-social-link svg {
+    width: 18px;
+    height: 18px;
+}
+
+.fdp-ftr-soc .wp-block-social-link:hover {
+    background: var(--fdp-lime);
+    box-shadow: inset 0 0 0 1.5px var(--fdp-lime);
+}
+
+.fdp-ftr-soc .wp-block-social-link:hover a {
+    color: var(--fdp-ink);
+}
+
+/* Contact rows with lime glyphs. */
+.fdp-ftr-cbox {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    font-size: 14.4px;
+    color: rgba(255, 255, 255, .74);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.fdp-ftr-cbox::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    flex: none;
+    margin-top: 3px;
+    background: var(--fdp-lime);
+    -webkit-mask: url(assets/images/icons/mail.svg) center / contain no-repeat;
+    mask: url(assets/images/icons/mail.svg) center / contain no-repeat;
+}
+
+.fdp-ftr-cbox.is-phone::before {
+    -webkit-mask-image: url(assets/images/icons/phone.svg);
+    mask-image: url(assets/images/icons/phone.svg);
+}
+
+.fdp-ftr-cbox.is-pin::before {
+    -webkit-mask-image: url(assets/images/icons/pin.svg);
+    mask-image: url(assets/images/icons/pin.svg);
+}
+
+.fdp-ftr-cbox a:hover {
+    color: var(--fdp-lime);
+}
+
+.fdp-ftr-bot {
+    border-top: 1px solid rgba(255, 255, 255, .13);
+    font-size: 13.4px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.fdp-ftr-bot p {
+    margin: 0;
+}
+
+.fdp-ftr-legal a:hover {
+    color: var(--fdp-lime);
+}
+
+/* Back to top */
+.fdp-totop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 70;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition: opacity .35s var(--fdp-ease), transform .35s var(--fdp-ease);
+}
+
+.fdp-totop.is-on {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+}
+
+.fdp-totop .wp-block-button__link {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    gap: 0;
+    border-radius: 50%;
+    background-color: var(--fdp-ink);
+    display: grid;
+    place-items: center;
+    box-shadow: 0 16px 34px -20px rgba(0, 0, 0, .9);
+    font-size: 0;
+}
+
+.fdp-totop .wp-block-button__link::after {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    background: var(--fdp-lime);
+    -webkit-mask: url(assets/images/icons/arrow-up.svg) center / contain no-repeat;
+    mask: url(assets/images/icons/arrow-up.svg) center / contain no-repeat;
+}
+
+.fdp-totop .wp-block-button__link:hover::after {
+    transform: none;
+}
+
+/* ============================================================
+   10. Inner page banners
+   ============================================================ */
+.fdp-banner {
+    background: var(--fdp-mist);
+    border-bottom: 1px solid var(--fdp-line);
+    position: relative;
+    overflow: hidden;
+}
+
+.fdp-banner::after {
+    content: "";
+    position: absolute;
+    right: -70px;
+    top: -90px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(16, 17, 16, .08);
+    pointer-events: none;
+}
+
+.fdp-crumbs {
+    width: fit-content;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+    background: #fff;
+    border-radius: var(--fdp-r-pill);
+    box-shadow: inset 0 0 0 1.5px var(--fdp-line);
+    font-size: 13px;
+}
+
+.fdp-crumbs p {
+    margin: 0;
+}
+
+.fdp-crumbs .wp-block-query-title {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: var(--fdp-slate);
+}
+
+/* ============================================================
+   11. Archive, search & pagination
+   ============================================================ */
+.fdp-searchform .wp-block-search__input {
+    border: 1.5px solid var(--fdp-line);
+    border-radius: var(--fdp-r-pill);
+    padding: 14px 22px;
+    background: #fff;
+    color: var(--fdp-ink);
+    font-family: var(--wp--preset--font-family--inter-tight);
+}
+
+.fdp-searchform .wp-block-search__input:focus {
+    border-color: var(--fdp-ink);
+    outline: none;
+}
+
+.fdp-searchform .wp-block-search__button {
+    border: 0;
+    border-radius: var(--fdp-r-pill);
+    background: var(--fdp-ink);
+    color: #fff;
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 26px;
+    transition: background-color .3s var(--fdp-ease);
+}
+
+.fdp-searchform .wp-block-search__button:hover {
+    background: var(--fdp-graphite);
+}
+
+.fdp-pagination {
+    gap: 8px;
+}
+
+.fdp-pagination .wp-block-query-pagination-numbers,
+.fdp-pagination .page-numbers,
+.fdp-pagination .wp-block-query-pagination-previous,
+.fdp-pagination .wp-block-query-pagination-next {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.fdp-pagination .page-numbers,
+.fdp-pagination .wp-block-query-pagination-previous,
+.fdp-pagination .wp-block-query-pagination-next {
+    display: inline-grid;
+    place-items: center;
+    min-width: 42px;
+    height: 42px;
+    padding: 0 14px;
+    border-radius: var(--fdp-r-pill);
+    box-shadow: inset 0 0 0 1.5px var(--fdp-line);
+    transition: background-color .28s var(--fdp-ease), color .28s var(--fdp-ease), box-shadow .28s var(--fdp-ease);
+}
+
+.fdp-pagination .wp-block-query-pagination-numbers {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.fdp-pagination .page-numbers:hover,
+.fdp-pagination .wp-block-query-pagination-previous:hover,
+.fdp-pagination .wp-block-query-pagination-next:hover {
+    box-shadow: inset 0 0 0 1.5px var(--fdp-ink);
+}
+
+.fdp-pagination .page-numbers.current {
+    background: var(--fdp-ink);
+    color: #fff;
+    box-shadow: inset 0 0 0 1.5px var(--fdp-ink);
+}
+
+/* ============================================================
+   12. Single post & page content
+   ============================================================ */
+.fdp-entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    font-size: 13.4px;
+    color: var(--fdp-slate);
+}
+
+.fdp-entry-meta .wp-block-post-date::before,
+.fdp-entry-meta .wp-block-post-author-name::before,
+.fdp-entry-meta .wp-block-post-terms::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -3px;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    background: var(--fdp-slate);
+    -webkit-mask: url(assets/images/icons/calendar.svg) center / contain no-repeat;
+    mask: url(assets/images/icons/calendar.svg) center / contain no-repeat;
+}
+
+.fdp-entry-meta .wp-block-post-author-name::before {
+    -webkit-mask-image: url(assets/images/icons/user.svg);
+    mask-image: url(assets/images/icons/user.svg);
+}
+
+.fdp-entry-meta .wp-block-post-terms::before {
+    -webkit-mask-image: url(assets/images/icons/tag.svg);
+    mask-image: url(assets/images/icons/tag.svg);
+}
+
+.fdp-featured img {
+    border-radius: var(--fdp-r-lg);
+    width: 100%;
+    object-fit: cover;
+}
+
+.fdp-content p,
+.fdp-content ul,
+.fdp-content ol {
+    font-size: 16.4px;
+    line-height: 1.75;
+    color: var(--fdp-graphite);
+}
+
+.fdp-content > * {
+    margin-block: 22px;
+}
+
+.fdp-content > *:first-child {
+    margin-top: 0;
+}
+
+.fdp-content h2,
+.fdp-content h3,
+.fdp-content h4 {
+    margin-top: 42px;
+    margin-bottom: 14px;
+}
+
+.fdp-content a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--fdp-lime-deep);
+}
+
+.fdp-content img {
+    border-radius: var(--fdp-r-md);
+}
+
+.fdp-content blockquote {
+    background: var(--fdp-mist);
+    border-radius: var(--fdp-r-md);
+    padding: 24px 26px;
+    border-left: 3px solid var(--fdp-lime);
+}
+
+.fdp-postnav {
+    border-top: 1px solid var(--fdp-line);
+}
+
+/* post-terms and post-navigation-link render nothing when there is nothing to
+   show, which would otherwise leave an empty band behind. */
+.fdp-entry-tags:not(:has(*)),
+.fdp-postnav:not(:has(*)) {
+    display: none;
+}
+
+.fdp-postnav a {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--fdp-ink);
+}
+
+.fdp-postnav a:hover {
+    color: var(--fdp-slate);
+}
+
+/* Comments */
+.fdp-comments {
+    border-top: 1px solid var(--fdp-line);
+}
+
+.fdp-comments .wp-block-comments-title,
+.fdp-comments .comment-reply-title {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 700;
+    letter-spacing: -.028em;
+}
+
+.fdp-comments .wp-block-comment-template li {
+    background: var(--fdp-mist);
+    border-radius: var(--fdp-r-md);
+    padding: 22px;
+    margin-bottom: 16px;
+    list-style: none;
+}
+
+.fdp-comments .wp-block-comment-author-name {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 700;
+    color: var(--fdp-ink);
+}
+
+.fdp-comments .wp-block-avatar img {
+    border-radius: 50%;
+}
+
+.fdp-comments input[type="text"],
+.fdp-comments input[type="email"],
+.fdp-comments input[type="url"],
+.fdp-comments textarea {
+    width: 100%;
+    border: 1.5px solid var(--fdp-line);
+    border-radius: var(--fdp-r-md);
+    background: #fff;
+    padding: 13px 18px;
+    font-family: var(--wp--preset--font-family--inter-tight);
+    font-size: 15px;
+    color: var(--fdp-ink);
+}
+
+.fdp-comments input:focus,
+.fdp-comments textarea:focus {
+    border-color: var(--fdp-ink);
+    outline: none;
+}
+
+.fdp-comments .comment-form-comment label,
+.fdp-comments .comment-form-author label,
+.fdp-comments .comment-form-email label,
+.fdp-comments .comment-form-url label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13.6px;
+    font-weight: 600;
+    color: var(--fdp-slate);
+}
+
+.fdp-comments .form-submit input[type="submit"] {
+    border: 0;
+    border-radius: var(--fdp-r-pill);
+    background: var(--fdp-ink);
+    color: #fff;
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: background-color .3s var(--fdp-ease);
+}
+
+.fdp-comments .form-submit input[type="submit"]:hover {
+    background: var(--fdp-graphite);
+}
+
+/* ============================================================
+   13. 404
+   ============================================================ */
+.fdp-404-code {
+    font-family: var(--wp--preset--font-family--space-grotesk);
+    font-weight: 700;
+    font-size: clamp(96px, 18vw, 220px);
+    line-height: .86;
+    letter-spacing: -.06em;
+    color: var(--fdp-lime);
+    -webkit-text-stroke: 2px var(--fdp-ink);
+    margin: 0;
+}
+
+/* ============================================================
+   14. Motion & reveal
+   ============================================================ */
+html.js .fdp-rev {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity .8s var(--fdp-ease), transform .8s var(--fdp-ease);
+}
+
+html.js .fdp-rev.is-in {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    html.js .fdp-rev {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ============================================================
+   15. Responsive
+   ============================================================ */
+@media (max-width: 900px) {
+    .fdp-hero-card {
+        max-width: 460px;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 781px) {
+    .fdp-sh {
+        align-items: flex-start;
+    }
+
+    .fdp-about-badge {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        padding: 14px 16px;
+    }
+
+    .fdp-about-badge-num {
+        font-size: 26px;
+    }
+
+    .fdp-ftr-bot {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .fdp-faq-item > p:not(:first-of-type),
+    .fdp-faq-item > .wp-block-paragraph {
+        padding-right: 0;
+    }
+
+    .fdp-hero-photo img {
+        aspect-ratio: 1 / 1.12;
+    }
+
+    .fdp-totop {
+        right: 14px;
+        bottom: 14px;
+    }
+}
